@@ -225,7 +225,10 @@ unwanted space when exporting org-mode to html."
             '(("t" "Todo" entry (file+headline "~/org-notes/gtd.org" "Workspace")
                "* TODO [#B] %?\n  %i\n"
                :empty-lines 1)
-              ("n" "Reading notes" entry (file+headline "~/org-notes/reading-notes.org" "Reading notes")
+              ("n" "notes" entry (file+headline "~/org-notes/notes.org" "Quick notes")
+               "* %?\n  %i\n %U"
+               :empty-lines 1)
+              ("r" "Reading notes" entry (file+headline "~/org-notes/reading-notes.org" "Reading notes")
                "* TODO [#B] %?\n  %i\n %U"
                :empty-lines 1)
               ("b" "Blog Ideas" entry (file+headline "~/org-notes/notes.org" "Blog Ideas")
